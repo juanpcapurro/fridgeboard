@@ -1,0 +1,29 @@
+clang
+
+%c -std=c11
+%cpp -std=c++11
+
+-I/home/capu/src/fridgeboard/include
+-I/home/capu/src/fridgeboard/src
+-I/home/capu/.platformio/packages/framework-arduino-avr/cores/arduino
+-I/home/capu/.platformio/packages/framework-arduino-avr/variants/micro
+-I/home/capu/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
+-I/home/capu/.platformio/packages/framework-arduino-avr/libraries/HID/src
+-I/home/capu/.platformio/packages/framework-arduino-avr/libraries/SPI/src
+-I/home/capu/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
+-I/home/capu/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-I/home/capu/.platformio/packages/toolchain-atmelavr/avr/include
+-I/home/capu/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed
+-I/home/capu/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include
+-I/home/capu/.platformio/packages/tool-unity
+
+-DPLATFORMIO=40100
+-DARDUINO_AVR_MICRO
+-DF_CPU=16000000L
+-DARDUINO_ARCH_AVR
+-DARDUINO=10808
+-DUSB_VID=0x2341
+-DUSB_PID=0x8037
+-DUSB_PRODUCT=&quot;Arduino Micro&quot;
+-DUSB_MANUFACTURER=&quot;Arduino&quot;
+-D__AVR_ATmega32U4__
